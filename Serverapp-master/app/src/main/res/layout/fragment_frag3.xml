@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="2dp">
+
+        <ImageView
+            android:id="@+id/blank3"
+            android:layout_width="120dp"
+            android:layout_height="131dp"
+            android:layout_marginStart="24dp"
+
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/button_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="12dp"
+
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/arca"
+            android:text="PREVIEW"
+            android:textColor="@color/pokerBackground"
+            app:layout_constraintBottom_toBottomOf="@+id/galleryImageView"
+            app:layout_constraintStart_toStartOf="@+id/galleryImageView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <ImageView
+            android:id="@+id/galleryImageView"
+            android:layout_width="88dp"
+            android:layout_height="108dp"
+            android:layout_marginTop="8dp"
+            android:columnWidth="280dp"
+            android:gravity="center"
+            android:horizontalSpacing="15dp"
+            android:numColumns="2"
+            android:padding="2dp"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="2dp"
+            app:layout_constraintEnd_toEndOf="@+id/blank3"
+            app:layout_constraintStart_toStartOf="@+id/blank3"
+            app:layout_constraintTop_toTopOf="@+id/blank3"
+            tools:ignore="MissingConstraints">
+
+        </ImageView>
+
+
+        <Button
+            android:id="@+id/full_button"
+            android:layout_width="180dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/button_background"
+            android:text="Full Size"
+            android:textColor="@color/colorButton1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.652"
+            app:layout_constraintStart_toEndOf="@+id/galleryImageView"
+            android:fontFamily="@font/arca"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/goDB_button"
+            android:layout_width="180dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/arca"
+            android:text="Go DB Gallery"
+            android:textColor="@color/colorButton1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.626"
+            app:layout_constraintStart_toEndOf="@+id/galleryImageView"
+
+            app:layout_constraintTop_toBottomOf="@+id/full_button" />
+
+
+        <GridView
+            android:id="@+id/galleryGridView"
+            android:layout_width="match_parent"
+            android:layout_height="551dp"
+
+            android:layout_marginTop="172dp"
+            android:columnWidth="280dp"
+            android:gravity="center"
+            android:horizontalSpacing="15dp"
+            android:numColumns="2"
+            android:padding="2dp"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </GridView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

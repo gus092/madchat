@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#B5F3FF</color>
+    <color name="colorPrimaryDark">#00390057</color>
+    <color name="colorAccent">#8BC34A</color>
+    <color name="backgroundfragment">#FFFFFFFF</color>
+    <color name= "red">#10390057</color>
+    <color name="colorButton1">#555556</color>
+    <color name="colortext1">#BFA98B</color>
+    <color name="pokerBackground">#4A833F</color>
+    <color name="brightGray">#FFFFFF</color>
+    <color name="avobg">#99C9C3</color>
+    <color name="avotext">#845716</color>
+    <color name="colortext2">#ECE6DB</color>
+    <color name="brightGray2">#BBB9B9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorAccent2">#97A38A</color>
+    <color name="comment">#1EDAB5</color>
+    <color name="greenbtn">#789954</color>
+    <color name="colorAccent3">#7A7C9E54</color>
+    <color name="my">#00BCD4</color>
+</resources>
+
